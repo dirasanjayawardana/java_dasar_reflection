@@ -15,3 +15,4 @@ Annotation hanya bisa memiliki method dengan tipe data sederhana, dan bisa memil
 - test/FieldTest.java
 - test/MethodTest.java
 - test/ParameterTest.java
+- test/ConstructorTest.java
