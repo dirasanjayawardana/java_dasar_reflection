@@ -24,3 +24,5 @@ Annotation hanya bisa memiliki method dengan tipe data sederhana, dan bisa memil
 - annotation/NotBlank.java
 - validation/Validator.java
 - test/AnnotationTest.java
+- test/EnumTest.java
+- test/PrimitiveTypeTest.java
