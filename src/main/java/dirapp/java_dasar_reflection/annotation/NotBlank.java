@@ -10,11 +10,16 @@ import java.lang.annotation.*;
 // @Target --> memberi tahu anotation bisa digunakan dimana (class, method, property, dll)
 // @Retention --> memberi tahu anotation ketika sudah dicompile bisa diakses dimana saja
 
-@Retention(value = RetentionPolicy.RUNTIME)
-@Target(value = { ElementType.TYPE }) // annotasi bisa digunakan di class, interface, enum
+// ElementType.TYPE --> annotasi bisa digunakan di class, interface, enum
+// ElementType.FIELD --> annotasi bisa digunakan di field
 
-public @interface Fancy {
-    String name(); // jika tidak menggunakan default value, maka wajib mengisi nilai ketika menggunakan annotation
+@Documented // memastikan bahwa anotasi yang dibuat akan terlihat dalam dokumentasi API yang dihasilkan oleh Javadoc
+@Target({
+    ElementType.FIELD
+})
+@Retention(RetentionPolicy.RUNTIME)
+public @interface NotBlank {
 
-    String[] tags() default {};
+  boolean allowEmptyString() default false; // jika tidak menggunakan default value, maka wajib mengisi nilai ketika menggunakan annotation
+
 }

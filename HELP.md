@@ -16,3 +16,11 @@ Annotation hanya bisa memiliki method dengan tipe data sederhana, dan bisa memil
 - test/MethodTest.java
 - test/ParameterTest.java
 - test/ConstructorTest.java
+- test/SuperClassTest.java
+- test/InterfaceTest.java
+- test/ModifierTest.java
+- test/PackageTest.java
+- data/package-info.java
+- annotation/NotBlank.java
+- validation/Validator.java
+- test/AnnotationTest.java

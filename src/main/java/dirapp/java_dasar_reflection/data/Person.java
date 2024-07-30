@@ -2,10 +2,14 @@ package dirapp.java_dasar_reflection.data;
 
 import java.util.List;
 
-public class Person {
+import dirapp.java_dasar_reflection.annotation.NotBlank;
 
+public class Person implements Nameable {
+
+  @NotBlank
   private String firstName;
 
+  @NotBlank(allowEmptyString = true)
   private String lastName;
 
   private int age;
