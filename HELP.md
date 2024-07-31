@@ -26,3 +26,6 @@ Annotation hanya bisa memiliki method dengan tipe data sederhana, dan bisa memil
 - test/AnnotationTest.java
 - test/EnumTest.java
 - test/PrimitiveTypeTest.java
+- test/ArrayTest.java
+- test/ParameterTypeTest.java
+- test/TypeVariabelTest.java
