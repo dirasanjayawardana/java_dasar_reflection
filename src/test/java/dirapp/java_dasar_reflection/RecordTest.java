@@ -38,11 +38,14 @@ public class RecordTest {
   @Test
   void testGetRecordValueByComponent() throws InvocationTargetException, IllegalAccessException {
     Class<Product> productClass = Product.class;
+
+    // mengambil semua data di dalam Record
     RecordComponent[] components = productClass.getRecordComponents();
 
     Product product = new Product("1", "Product satu", 20000000L);
 
     for (RecordComponent component : components) {
+      // mengambil setiap data component Record dengan getAccessor()
       Method accessor = component.getAccessor();
       System.out.println(accessor.getName());
       System.out.println(accessor.invoke(product));
