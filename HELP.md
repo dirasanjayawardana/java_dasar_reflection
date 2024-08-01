@@ -29,3 +29,5 @@ Annotation hanya bisa memiliki method dengan tipe data sederhana, dan bisa memil
 - test/ArrayTest.java
 - test/ParameterTypeTest.java
 - test/TypeVariabelTest.java
+- test/ProxyTest.java
+- test/RecordTest.java

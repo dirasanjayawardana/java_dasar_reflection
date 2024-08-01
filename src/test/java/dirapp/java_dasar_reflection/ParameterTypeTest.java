@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class ParameterTypeTest {
-  // ParameterizedType --> representasi java reflection untuk data generic, misal List<String>, Map<String>, dll
+  // ParameterizedType --> representasi java reflection untuk data generic, misal List<String>, Map<String, String>, dll
   
 
   @Test

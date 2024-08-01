@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 
 public class TypeVariabelTest {
-  
+  // TypeVariabel -> representasi java reflection untuk data generic, misal List<T>, Map<K, V>, dll
 
   @Test
   void testGetTypeVariables() {
@@ -18,9 +18,10 @@ public class TypeVariabelTest {
     TypeVariable<Class<Data>>[] typeVariables = dataClass.getTypeParameters();
 
     for (TypeVariable<Class<Data>> variable : typeVariables) {
-      System.out.println(variable.getName());
-      System.out.println(Arrays.toString(variable.getBounds()));
-      System.out.println(variable.getGenericDeclaration());
+      System.out.println("variabel name: " + variable.getName());
+      // melihat field T extends dari mana saja
+      System.out.println("variabel getBounds: " + Arrays.toString(variable.getBounds()));
+      System.out.println("variabel getGenericDeclaration: " + variable.getGenericDeclaration());
     }
   }
 }
